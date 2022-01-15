@@ -1,26 +1,39 @@
 
 
 
-@media only screen and (max-width: 768px) {
-    nav ul{
-        display: none;
+@media only screen and (max-width: 688px) {
+   
+    .nav-container{
+        width: 100%;
+        flex-direction: column;
     }
     .container{
-        display: block;
+        flex-direction: column;
     }
-    .box-1{
-        width: 80%;
+    .logos{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
     }
-    .box-1 h1{
-        font-size: 25px;
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
     }
-    .box-1 p{
-        font-size: 16px;
+    .products-heading{
+        flex-direction: column;
+        
     }
-    .box-2{
-        width: 100%;
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .logos{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
     }
-    .box-2 img{
-        width: 100%
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+
     }
+    
 }
